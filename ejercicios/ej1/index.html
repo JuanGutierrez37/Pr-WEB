@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Empleados</title>
+
+    <!-- JQUEY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <center><h2>EMPLEADOs </h2></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <form method="post" action="mostrar.php">
+                    <div class="mb-3">
+                        <center> Empleado 1</center>
+                        <label for="idNombre" class="form-label">Nombre</label>
+                        <input type="text"  name= "nombre1" class="form-control" id="idNombre"
+                            placeholder="Nombre" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idEdad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="idEdad"
+                        name= "edad1" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" id="idSoltero" name="Estado-Civil" value="Soltero(a)" required/>
+                                <label for="idSoltero">Soltero(a)</label>
+                        
+                        
+                                <input type="radio" id="idCasado" name="Estado-Civil" value="Casado(a)" />
+                                <label for="idCasado">Casado(a)</label>
+
+                                <input type="radio" id="idViudo" name="Estado-Civil" value="Viudo(a)" />
+                                <label for="idViudo">Viudo(a)</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div>
+                                <input type="radio" id="idMas" name="Sexo" value="M" required />
+                                <label for="idMas">Masculino</label>
+                        
+                        
+                                <input type="radio" id="idFem" name="Sexo" value="F" />
+                                <label for="idFem">Femenino</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idSueldo" class="form-label">Sueldo</label>
+                        <input type="number"  name= "sueldo1"class="form-control" id="idSueldo"
+                            placeholder="00.00" required>
+                    </div><br><br><br><br>
+                    <center>Empleado 2</center>
+
+
+                    <div class="mb-3">
+                        <label for="idNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="idNombre"
+                            placeholder="Nombre" name= "nombre2" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idEdad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="idEdad"
+                            placeholder="" name= "edad2" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" id="idSoltero" name="Estado-Civil2" value="Soltero(a)"  required/>
+                                <label for="idSoltero">Soltero(a)</label>
+                        
+                        
+                                <input type="radio" id="idCasado" name="Estado-Civil2" value="Casado(a)"  />
+                                <label for="idCasado">Casado(a)</label>
+
+                                <input type="radio" id="idViudo" name="Estado-Civil2" value="Viudo(a)" />
+                                <label for="idViudo">Viudo(a)</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div>
+                                <input type="radio" id="idMas" name="Sexo2" value="M" required/>
+                                <label for="idMas">Masculino</label>
+                        
+                        
+                                <input type="radio" id="idFem" name="Sexo2" value="F" />
+                                <label for="idFem">Femenino</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idSueldo" class="form-label">Sueldo</label>
+                        <input type="number" class="form-control" id="idSueldo"
+                            placeholder="00.00" name= "sueldo2" required>
+                    </div><br><br><br><br>
+
+                    <center>Empleado 3</center>
+                    <div class="mb-3">
+                        <label for="idNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="idNombre"
+                            placeholder="Nombre" name= "nombre3" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idEdad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="idEdad"
+                            placeholder="" name= "edad3" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" id="idSoltero" name="Estado-Civil3" value="Soltero(a)" required/>
+                                <label for="idSoltero">Soltero(a) </label>
+                        
+                        
+                                <input type="radio" id="idCasado" name="Estado-Civil3" value="Casado(a)" />
+                                <label for="idCasado">Casado(a)</label>
+
+                                <input type="radio" id="idViudo" name="Estado-Civil3" value="Viudo(a)" />
+                                <label for="idViudo">Viudo(a)</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div>
+                                <input type="radio" id="idMas" name="Sexo3" value="M" required />
+                                <label for="idMas">Masculino</label>
+                        
+                        
+                                <input type="radio" id="idFem" name="Sexo3" value="F" />
+                                <label for="idFem">Femenino</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idSueldo" class="form-label">Sueldo</label>
+                        <input type="number" class="form-control" id="idSueldo"
+                            placeholder="00.00" name= "sueldo3" required>
+                    </div>
+
+                    <div class="mb-3"><br><br><br><br>
+
+                    <center>Empleado 4</center>
+                        <label for="idNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="idNombre"
+                            placeholder="Nombre" name= "nombre4" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idEdad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="idEdad"
+                            placeholder="" name= "edad4" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" id="idSoltero" name="Estado-Civil4" value="Soltero(a)" required />
+                                <label for="idSoltero">Soltero(a)</label>
+                        
+                        
+                                <input type="radio" id="idCasado" name="Estado-Civil4" value="Casado(a)" />
+                                <label for="idCasado">Casado(a)</label>
+
+                                <input type="radio" id="idViudo" name="Estado-Civil4" value="Viudo(a)" />
+                                <label for="idViudo">Viudo(a)</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div>
+                                <input type="radio" id="idMas" name="Sexo4" value="M" required/>
+                                <label for="idMas">Masculino</label>
+                        
+                        
+                                <input type="radio" id="idFem" name="Sexo4" value="F" required/>
+                                <label for="idFem">Femenino</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idSueldo" class="form-label">Sueldo</label>
+                        <input type="number" class="form-control" id="idSueldo"
+                            placeholder="00.00" name= "sueldo4" required>
+                    </div>
+                    <div class="mb-3"><br><br><br><br>
+
+                    <center>Empleado 5</center>
+                        <label for="idNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="idNombre"
+                            placeholder="Nombre" name= "nombre5" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idEdad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="idEdad"
+                            placeholder="" name= "edad5" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" id="idSoltero" name="Estado-Civil5" value="Soltero(a)" required/>
+                                <label for="idSoltero">Soltero(a)</label>
+                        
+                        
+                                <input type="radio" id="idCasado" name="Estado-Civil5" value="Casado(a)" />
+                                <label for="idCasado">Casado(a)</label>
+
+                                <input type="radio" id="idViudo" name="Estado-Civil5" value="Viudo(a)" />
+                                <label for="idViudo">Viudo(a)</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div>
+                                <input type="radio" id="idMas" name="Sexo5" value="M" required/>
+                                <label for="idMas">Masculino</label>
+                        
+                        
+                                <input type="radio" id="idFem" name="Sexo5" value="F" />
+                                <label for="idFem">Femenino</label>
+                        
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idSueldo" class="form-label">Sueldo</label>
+                        <input type="number" class="form-control" id="idSueldo"
+                            placeholder="00.00" name= "sueldo5"  required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-primary" ></button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+                <!-- <table id="tableselect" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Estado civil</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Sueldo</th>
+                            
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table> -->
+
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/index.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
